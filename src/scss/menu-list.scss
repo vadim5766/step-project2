@@ -1,0 +1,34 @@
+.menu-list {
+  position: absolute;
+  right: 15px;
+  top: 103px;
+  @include list-style-none;
+  width: 292px;
+  text-align: start;
+  background: #333333;
+  padding-bottom: 14px;
+  display: none;
+  &__active{
+    display: block;
+  }
+}
+.menu-list__link {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: $hover-color;
+  padding-left: 29px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-left: 8px solid #333333;
+  transition: border 500ms, color 500ms;
+  &:focus{
+    border-left: 8px solid $header-color;
+    color: $header-color;
+  }
+}
+.menu-list__item{
+    padding-top: 29px;
+    padding-bottom: 24px;
+    border-bottom: 3px solid #3B3B3B;
+}

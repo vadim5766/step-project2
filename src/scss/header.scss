@@ -1,0 +1,198 @@
+.header {
+  background-image: url(/dist/img/background-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 800px;
+  text-align: center;
+  @media (max-width: 481px) {
+    max-height: 718px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 82px;
+    color: $hover-color;
+    margin-top: 112px;
+    margin-bottom: 19px;
+    @media (max-width: 993px) {
+      margin-top: 69px;
+      font-size: 72px;
+      line-height: 72px;
+    }
+    @media (max-width: 481px) {
+      font-size: 48px;
+      line-height: 48px;
+      margin-top: 50px;
+    }
+  }
+  &__subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: $header-color;
+    margin-top: 0;
+    margin-bottom: 19px;
+    @media (max-width: 993px) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @media (max-width: 481px) {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 14px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #848e97;
+    @media (max-width: 993px) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  &__download-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #848e97;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+}
+.background-header {
+  @media (max-width: 993px) {
+    background: #27262a;
+  }
+}
+.header-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  @media (max-width: 993px) {
+    padding-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 481px) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  &__img--hover {
+    transition: opacity 500ms;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $header-color;
+    margin-left: 17px;
+    transition: color 500ms;
+    @media (max-width: 481px) {
+      display: none;
+    }
+  }
+  &:hover {
+    .logo__img--hover {
+      opacity: 1;
+    }
+    .logo__text {
+      color: $hover-color;
+    }
+  }
+}
+.logo__img {
+  position: absolute;
+  &--hover {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.header-list {
+  @include list-style-none;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  @media (max-width: 993px) {
+    order: 1;
+    padding-top: 22px;
+    margin: 0 auto;
+  }
+  @media (max-width: 550px) {
+    gap: 25px;
+  }
+  @media (max-width: 481px) {
+    display: none;
+  }
+}
+.header-list__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: $header-color;
+  transition: color 500ms;
+  &:hover {
+    color: $hover-color;
+  }
+}
+.header-nav__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: $hover-color;
+  padding: 10px 22px;
+  margin-left: 48px;
+  background: $header-color;
+  border-radius: 40px;
+  border: 1px solid $header-color;
+  cursor: pointer;
+  transition: color 500ms, background 500ms, border 500ms;
+  @media (max-width: 993px) {
+    margin-left: 200px;
+  }
+  @media (max-width: 550px) {
+    margin-left: 0;
+  }
+  @media (max-width: 481px) {
+    padding: 10px 14px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  &--download {
+    padding: 22px 60px;
+    font-size: 21px;
+    line-height: 22px;
+    margin-top: 416px;
+    @media (max-width: 993px) {
+      margin-left: 0;
+    }
+    @media (max-width: 573px) {
+      margin-top: 392px;
+    }
+    @media (max-width: 481px) {
+      padding: 12px 28px;
+      margin-top: 398px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  &:hover {
+    color: $header-color;
+    background: #ffffff;
+    border: 1px solid $header-color;
+  }
+}

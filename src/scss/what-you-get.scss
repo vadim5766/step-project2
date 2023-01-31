@@ -1,0 +1,142 @@
+.what-you-get {
+  position: relative;
+  padding: 94px 0 69px;
+  background: #F4F4F4;
+
+  @include mq($pl) {
+    padding: 62px 0 0;
+    background: #fff;
+  }
+  @include mq($mob) {
+    padding: 32px 0 6px;
+  }
+}
+
+.what-you-get__container {
+  display: flex;
+  gap: 0 74px;
+
+  @include mq($pl) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.what-you-get__left-column {
+  display: flex;
+  gap: 33px 0;
+  width: 50%;
+  flex-wrap: wrap;
+
+  @include mq($pl) {
+    width: 100%;
+    order: 2;
+    gap: 59px 0;
+  }
+  @include mq($mob){
+    gap: 37px 0;
+  }
+}
+
+.what-you-get__right-column{
+  display: flex;
+  width: 50%;
+
+  @include mq($pl) {
+    width: 100%;
+    order: 1;
+    margin-bottom: 52px;
+  }
+  @include mq($mob) {
+     margin-bottom: 36px;
+   }
+}
+.what-you-get__h2{
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 104%;
+  color: #8D81AC;
+  margin: 0;
+
+  @include mq($pl) {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    line-height: 105%;
+  }
+  @include mq($mob){
+    font-size: 32px;
+    line-height: 119%;
+  }
+}
+.what-you-get__block{
+  display: grid;
+  grid-template-columns: 111px 1fr;
+  grid-gap: 17px 24px;
+
+  @include mq($pl) {
+    grid-gap: 15px 43px;
+  }
+  @include mq($mob){
+    display: block;
+    margin-bottom: 38px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}
+.what-you-get__icon{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  @include mq($mob){
+    margin: 0 auto 27px;
+  }
+}
+.what-you-get__title{
+  font-size: 16px;
+  line-height: 131%;
+  color: #323232;
+
+  @include mq($mob){
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 14px;
+  }
+}
+.what-you-get__text{
+  font-size: 14px;
+  line-height: 150%;
+  color: #848E97;
+
+  @include mq($mob){
+    text-align: center;
+    font-family: $font-lato;
+  }
+}
+.what-you-get__img{
+  position: absolute;
+  bottom: 37px;
+  right: 0;
+  width: 50%;
+  max-width: 600px;
+  & img{
+    width: 100%;
+  }
+  @include mq($pl){
+    margin: 73px 0 0 auto;
+    bottom: 0;
+    max-width: calc(100% - 73px);
+    width: auto;
+    position: relative;
+  }
+  @include mq($mob){
+    margin: 58px 0 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+

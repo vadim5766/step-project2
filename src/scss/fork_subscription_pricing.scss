@@ -1,0 +1,187 @@
+.fork-pricing {
+  padding: 83px 0 73px;
+  background: url("../img/fork-pricing.jpg") top center no-repeat,
+  #4B3B4E;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+
+  @include mq($pl) {
+    padding: 79px 0 94px;
+  }
+  @include mq($mob) {
+    padding: 2px 0 12px;
+    background: #4B3B4E;
+  }
+}
+
+.fork-pricing__h2 {
+  margin-bottom: 61px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  text-align: center;
+  color: #FFFFFF;
+
+  @include mq($pl) {
+    margin-bottom: 39px;
+    font-size: 42px;
+    line-height: 105%;
+  }
+  @include mq($mob) {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 150%;
+  }
+}
+
+.fork-pricing__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  @include mq($pl) {
+    flex-wrap: wrap;
+    gap: 0 15px;
+  }
+  @include mq($mob) {
+    gap: 15px 30px;
+  }
+}
+
+.fork-pricing__block {
+  width: 257px;
+  background: rgba(255, 255, 255, 0.11);
+  mix-blend-mode: normal;
+
+  &--active {
+    width: 299px;
+    background: rgba(70, 48, 72, 0.84);
+  }
+  @include mq($pl) {
+    max-width: calc(50% - 49.5px);
+
+    &--active {
+      margin-left: -42px;
+      max-width: calc(50% - 7.5px);
+    }
+  }
+  @include mq($mob) {
+    max-width: 100%;
+    margin: 0;
+  }
+
+
+}
+
+.fork-pricing__break {
+  display: none;
+  @include mq($pl) {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+  }
+  @include mq($mob) {
+    display: none;
+  }
+}
+
+.fork-pricing__title {
+  padding: 36px 5px;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+
+  .fork-pricing__block--active & {
+    background: rgba(0, 0, 0, 0.11);
+  }
+
+  @include mq($mob) {
+    font-size: 24px;
+  }
+
+}
+
+.fork-pricing__price {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 30px;
+
+  .fork-pricing__block--active & {
+    margin-top: 14px;
+    font-size: 82px;
+    line-height: 150%;
+  }
+
+
+}
+
+.fork-pricing__mount {
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 20px;
+
+  .fork-pricing__block--active & {
+    margin-top: 16px;
+  }
+}
+
+.fork-pricing__line {
+  margin: 38px auto 30px;
+  background: #8D81AC;
+  width: 60px;
+  height: 5px;
+
+  .fork-pricing__block--active & {
+    margin: 46px auto 40px;
+  }
+}
+
+.fork-pricing__text {
+  font-size: 16px;
+  line-height: 112%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto 18px;
+  height: 66px;
+
+  .fork-pricing__block--active & {
+    margin: 0 auto 83px;
+  }
+}
+
+.fork-pricing__btn {
+  display: block;
+  margin: 0 auto 37px;
+  padding: 15px 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 163px;
+
+  .fork-pricing__block--active & {
+    margin: 0 auto 47px;
+    padding: 18px 5px;
+    font-size: 16px;
+    line-height: 113%;
+    width: 190px;
+  }
+
+}
+

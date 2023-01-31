@@ -1,0 +1,126 @@
+.background-block-fork {
+  background-color: #4B3B4E;
+  background-image: url(/dist/img/background-fork.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 108px;
+  text-align: center;
+  @include mq($pl) {
+    padding-top: 85px;
+  }
+  @include mq($mob) {
+    background: #4B3B4E;
+    background-image: url(/dist/img/testmonials-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 57px;
+  }
+}
+.block-fork__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: $hover-color;
+  margin-top: 0;
+  margin-bottom: 75px;
+  @include mq($pl) {
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 85px;
+  }
+  @include mq($mob) {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 53px;
+  }
+}
+.block-fork__list {
+  @include list-style-none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 90px;
+  row-gap: 111px;
+  @include mq($pl) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 58px;
+  }
+  @include mq($mob) {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+  }
+}
+.block-fork__text {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $hover-color;
+  margin: 0;
+  &--text1 {
+    margin-top: 33px;
+  }
+  &--text2 {
+    margin-top: 29px;
+  }
+  &--text3 {
+    margin-top: 22px;
+  }
+  &--text4 {
+    margin-top: 33px;
+  }
+  &--text5 {
+    margin-top: 28px;
+  }
+  &--text6 {
+    margin-top: 30px;
+  }
+}
+.block-fork__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+.block-fork__information {
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a291a5;
+  margin-bottom: 0;
+  margin-top: 118px;
+  max-width: 887px;
+  @include mq($pl) {
+    max-width: 704px;
+    margin-top: 67px;
+  }
+  @include mq($mob) {
+    max-width: 251px;
+    margin-top: 37px;
+  }
+}
+.background-footer-block-fork {
+  background: #4B3B4E;
+  padding-top: 18px;
+  padding-bottom: 29px;
+}
+.block-fork__line {
+  max-width: 780px;
+  height: 2px;
+  background-color: #645766;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  @include mq($pl) {
+    max-width: 555px;
+  }
+  @include mq($mob) {
+    max-width: 245px;
+  }
+}

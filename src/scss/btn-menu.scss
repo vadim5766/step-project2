@@ -1,0 +1,127 @@
+.header-nav__menu{
+    margin-left: auto;
+    display: none;
+    @media (max-width: 481px) {
+      display: block;
+    }
+}
+.btn-menu {
+  border: none;
+  background: #27262a;
+  padding: 6px;
+  margin-right: 5px;
+  margin-left: auto;
+}
+.btn-menu__line {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 26px;
+  height: 3px;
+  margin-top: 6px;
+  position: relative;
+}
+.line1 {
+  width: 15px;
+  height: 3px;
+  margin-left: auto;
+  margin-top: 0;
+  rotate: 0deg;
+  top: 0;
+  animation: line1 500ms;
+  &__active {
+    rotate: 135deg;
+    width: 26px;
+    top: 8px;
+    animation: line1-active 500ms;
+  }
+}
+@keyframes line1 {
+  0% {
+    rotate: 135deg;
+    width: 26px;
+    top: 8px;
+  }
+  100% {
+    rotate: 0deg;
+    width: 15px;
+    top: 0;
+  }
+}
+@keyframes line1-active {
+  0% {
+    rotate: 0deg;
+    width: 15px;
+    top: 0;
+  }
+  100% {
+    rotate: 135deg;
+    width: 26px;
+    top: 8px;
+  }
+}
+
+.line2 {
+  rotate: 0deg;
+  bottom: 0;
+  animation: line2 500ms;
+  &__active {
+    rotate: 45deg;
+    bottom: 1px;
+    animation: line2-active 500ms;
+  }
+}
+@keyframes line2 {
+  0% {
+    rotate: 45deg;
+    bottom: 1px;
+  }
+  100% {
+    rotate: 0deg;
+    bottom: 0;
+  }
+}
+@keyframes line2-active {
+  0% {
+    rotate: 0deg;
+    bottom: 0;
+  }
+  100% {
+    rotate: 45deg;
+    bottom: 1px;
+  }
+}
+
+.line3 {
+  rotate: 0deg;
+  opacity: 1;
+  bottom: 0;
+  animation: line3 500ms;
+  &__active {
+    opacity: 0;
+    animation: line3-active 500ms;
+  }
+}
+@keyframes line3 {
+  0% {
+    rotate: 45deg;
+    opacity: 0;
+    bottom: 6px;
+  }
+  100% {
+    rotate: 0deg;
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes line3-active {
+  0% {
+    rotate: 0deg;
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    rotate: 45deg;
+    opacity: 0;
+    bottom: 6px;
+  }
+}
